@@ -13,10 +13,6 @@
             "role": "Developer"
         }
     ],
-    "require": {
-        "php": ">=5.3",
-        "ext-dom": "*"
-    },
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
