@@ -7,12 +7,13 @@ require_once __DIR__ . '/autoload.php';
 $tjkAPI = new TJK();
 
 
-//echo json_encode($tjkAPI->getTodayRaces());
+//$data = $tjkAPI->getTodayRaces();
 
-//echo json_encode($tjkAPI->getRacesByDate('20210415'));
+//$data = $tjkAPI->getRacesByDate('20210411');
 
-//echo json_encode($tjkAPI->getTodayResult());
+$data = $tjkAPI->getTodayResult();
 
-echo json_encode($tjkAPI->getResultByDate('20210410'));
+//$data = $tjkAPI->getResultByDate('20210410');
 
-return;
+echo json_encode($data);
+die();
