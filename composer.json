@@ -1,17 +1,32 @@
 {
     "name": "sezerfidanci/tjkapi",
-    "description": "Turkiye Jokey Kulubu (TJK) API",
     "type": "library",
+    "description": "Turkiye Jokey Kulubu (TJK) API",
+    "keywords": ["tjk","tjk api","turkiye jokey kulubu"],
+    "homepage": "https://sezerifdanci.com",
     "license": "MIT",
     "authors": [
         {
             "name": "Sezer Fidanci",
-            "email": "sezerfidanci@gmail.com"
+            "email": "sezerfidanci@gmail.com",
+            "homepage": "http://sezerfidanci.com",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3",
+        "ext-dom": "*"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "TJK\\": "src/"
+        }
+    },
     "require": {
         "ext-json": "*",
         "ext-curl": "*"
-    }
+    },
+    "version": "1.0.1"
+
 }
